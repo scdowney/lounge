@@ -1,0 +1,474 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Document Operations · Lounge</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="population.html" />
+    
+    
+    <link rel="prev" href="embedded.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="modeling.html">
+            
+                <a href="modeling.html">
+            
+                    
+                    Modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="middleware.html">
+            
+                <a href="middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="extend.html">
+            
+                <a href="extend.html">
+            
+                    
+                    Schema Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="embedded.html">
+            
+                <a href="embedded.html">
+            
+                    
+                    Embedded Documents 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="docops.html">
+            
+                <a href="docops.html">
+            
+                    
+                    Document Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="population.html">
+            
+                <a href="population.html">
+            
+                    
+                    Population
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="indexes.html">
+            
+                <a href="indexes.html">
+            
+                    
+                    Indexes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="promises.html">
+            
+                <a href="promises.html">
+            
+                    
+                    Promises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="api.html">
+            
+                <a href="api.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Document Operations</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="document-operations-">Document Operations <a id="docops"></a></h2><h3 id="saving-documents-">Saving Documents <a id="saving"></a></h3><p>Saving documents is done using <code>save</code> function that every <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> instance has. This will execute all pre
+&apos;save&apos; <a href="glossary.html#middleware" class="glossary-term" title="Functions that happen before and after certain actions, for example before saving a document, or after removing
+a document from a database.">middleware</a> and then perform Couchbase <code>upsert</code> operation on any subdocuments and the actual document. It will also
+perform lookup document updates and finally execute any post hook <a href="glossary.html#middleware" class="glossary-term" title="Functions that happen before and after certain actions, for example before saving a document, or after removing
+a document from a database.">middleware</a>.</p><p>From our example code above:</p><pre><code class="lang-js">user<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> savedDoc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>All documents and subdocuments would be upserted into the database.</p><p><strong><a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">Model</a>.save(data, options, fn)</strong></p><p><code>data</code> - any data to be set into the <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> before saving.</p><p><strong>options</strong></p><p>All options not present here are first looked up from <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a> options, and then from config options.</p><ul><li><code>storeFullReferenceId</code> - whether to save <a href="glossary.html#embedded-document" class="glossary-term" title="Model schemas can reference other models within them. In such scenario&apos;s only a reference to one document is
+saved within the other. Then actual contents are two different documents, linked only by a reference using the document
+key.">embedded document</a> property values as full document keys or just the base value
+</li>
+<li><code>storeFullKey</code> - whether to save the internal <a href="glossary.html#document-key" class="glossary-term" title="A document must have a primary key. It is used to look up the document within the database. If a key property
+isn&apos;t specified within a model schema, Lounge automatically creates one named id.">document key</a> property as fully expanded value or as the simple value
+</li>
+<li><code>refIndexKeyPrefix</code> - lookup <a href="glossary.html#index" class="glossary-term" title="A mechanism for looking up documents by means other than primary key / id. Currently Lounge itself only supports
+automatic indexing and lookup using reference lookup documents.
+Other indexing can be accomplished using views
+and N1QL. These can be easily
+added to models and lounge by using existing functionality and extending it.">index</a> <a href="glossary.html#document-key" class="glossary-term" title="A document must have a primary key. It is used to look up the document within the database. If a key property
+isn&apos;t specified within a model schema, Lounge automatically creates one named id.">document key</a> prefix.
+</li>
+<li><code>waitForIndex</code> - whether we want to wait for indexing to finish before returning. default is false.
+</li>
+<li><code>virtuals</code> - whether we want to save virtuals. default is <code>false</code>.
+</li>
+<li><code>minimize</code> - to &quot;minimize&quot; the document by removing any empty properties. Default: <code>true</code>
+</li>
+<li><code>expiry</code> - couchbase upsert option
+</li>
+<li><code>persist_to</code> - couchbase persist_to option
+</li>
+<li><code>replicate_to</code> - couchbase option
+</li></ul>
+<h3 id="getting-documents-">Getting Documents <a id="getting"></a></h3><p>All models created come with a static function <code>findById</code> that can be used to look up a single or multiple keys and
+retrieve documents from the database. If key does not exist and document is not found we <strong>do not</strong> return an error
+but also no <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> is generated. This is different than present couchbase module behaviour.</p><pre><code class="lang-js">User<span class="token punctuation">.</span><span class="token function">findById</span><span class="token punctuation">(</span><span class="token string">&apos;user123&apos;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> doc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// there was an error looking up the key</span>
+  <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>doc<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;no document found&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">else</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>doc<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// doc is instance of User and will print it out</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>We can get multiple keys using an array as the first parameter. In this case, the callback invoked is passed 3 arguments
+in form <code>(err, documents, misses)</code>.</p><pre><code class="lang-js">User<span class="token punctuation">.</span><span class="token function">findById</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;user123&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;user456&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> docs<span class="token punctuation">,</span> misses<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// there was an error looking up the key</span>
+  console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>docs<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">// array of Users found</span>
+  console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>misses<span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">// array if keys not found.</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>When <code>findById</code> is invoked using a single string argument the result returned is a single <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> instance. When an array
+is passed in we return the results as described above. To force <code>array</code> type of returns in <strong>all</strong> cases, set the Lounge
+config option <code>alwaysReturnArrays</code> to <code>true</code>. Default is <code>false</code>.</p><p>By default order of the generated objects in an array result is not guaranteed to be the same order as the ids queried.
+To keep the order of the returned <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> instances the same as the ids set <code>keepSortOrder</code> option to <code>true</code>.</p><p>By default the <code>findById</code> and <a href="glossary.html#index" class="glossary-term" title="A mechanism for looking up documents by means other than primary key / id. Currently Lounge itself only supports
+automatic indexing and lookup using reference lookup documents.
+Other indexing can be accomplished using views
+and N1QL. These can be easily
+added to models and lounge by using existing functionality and extending it.">index</a> query functions return 3 parameters to the callback in form <code>(err, docs, missing)</code>.
+If we want to force returning of 2 params at all times <code>(err, docs)</code>, and not return the <code>missing</code> parameter, we can
+use the <code>missing</code> options either in <code>Lounge</code> settings to set globally, or individually in function invocations. If
+<code>missing</code> option is set to <code>false</code> we won&apos;t return missing keys as the final param in the callback.</p><pre><code class="lang-js">lounge<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span><span class="token string">&apos;missing&apos;</span><span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+User<span class="token punctuation">.</span><span class="token function">findById</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;user123&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;user456&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> docs<span class="token punctuation">,</span> misses<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// there was an error looking up the key</span>
+  console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>docs<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">// array of Users found</span>
+  console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>misses<span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">// undefined</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<pre><code class="lang-js">lounge<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span><span class="token string">&apos;missing&apos;</span><span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+User<span class="token punctuation">.</span><span class="token function">findById</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;user123&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;user456&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> missing<span class="token punctuation">:</span> <span class="token keyword">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> docs<span class="token punctuation">,</span> misses<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// there was an error looking up the key</span>
+  console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>docs<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">// array of Users found</span>
+  console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>misses<span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">// array of missing keys, as the option in function params takes presidence</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id="removing-documents-">Removing Documents <a id="removing"></a></h3><p>Removing documents is done using <code>remove</code> function that every <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> instance has. This will execute all pre
+&apos;remove&apos; <a href="glossary.html#middleware" class="glossary-term" title="Functions that happen before and after certain actions, for example before saving a document, or after removing
+a document from a database.">middleware</a> and then perform Couchbase <code>remove</code> operation. It will also perform lookup document updates
+and finally execute any post hook <a href="glossary.html#middleware" class="glossary-term" title="Functions that happen before and after certain actions, for example before saving a document, or after removing
+a document from a database.">middleware</a>. By default this function <strong>does not</strong> remove embedded documents. To do
+this set <code>removeRefs</code> options to <code>true</code>.</p><pre><code class="lang-js">user<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> doc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>If we want all subdocuments to be removed:</p><pre><code class="lang-js">user<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> <span class="token punctuation">{</span>removeRefs<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">}</span><span class="token punctuation">,</span> doc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>This will execute removal, hooks and indexing operations for all documents and subdocuments.</p><p>Models have static <code>remove</code> function that can be used to perform document removal.</p><pre><code class="lang-js">User<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">&apos;user123&apos;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> doc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="embedded.html" class="navigation navigation-prev " aria-label="Previous page: Embedded Documents ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="population.html" class="navigation navigation-next " aria-label="Next page: Population">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Document Operations","level":"1.7","depth":1,"next":{"title":"Population","level":"1.8","depth":1,"path":"population.md","ref":"population.md","articles":[]},"previous":{"title":"Embedded Documents ","level":"1.6","depth":1,"path":"embedded.md","ref":"embedded.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/bojand/lounge"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"glossary.md","summary":"summary.md"},"variables":{},"title":"Lounge","gitbook":">=3.0.0"},"file":{"path":"docops.md","mtime":"2016-08-18T02:18:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-18T02:19:31.281Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

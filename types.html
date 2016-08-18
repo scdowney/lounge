@@ -1,0 +1,472 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Types · Lounge</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="middleware.html" />
+    
+    
+    <link rel="prev" href="modeling.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="modeling.html">
+            
+                <a href="modeling.html">
+            
+                    
+                    Modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="middleware.html">
+            
+                <a href="middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="extend.html">
+            
+                <a href="extend.html">
+            
+                    
+                    Schema Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="embedded.html">
+            
+                <a href="embedded.html">
+            
+                    
+                    Embedded Documents 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="docops.html">
+            
+                <a href="docops.html">
+            
+                    
+                    Document Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="population.html">
+            
+                <a href="population.html">
+            
+                    
+                    Population
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="indexes.html">
+            
+                <a href="indexes.html">
+            
+                    
+                    Indexes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="promises.html">
+            
+                <a href="promises.html">
+            
+                    
+                    Promises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="api.html">
+            
+                <a href="api.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Types</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="types-">Types <a id="types"></a></h2><p>Supported types:</p><ul><li>String
+</li>
+<li>Number
+</li>
+<li>Boolean
+</li>
+<li>Date
+</li>
+<li>Array (including types within Array)
+</li>
+<li>Object (including typed Models for sub-schemas)
+</li>
+<li>&apos;any&apos;
+</li></ul>
+<p>When a type is specified, it will be enforced. Typecasting is enforced on all types except &apos;any&apos;. If a value cannot be typecasted to the correct type, the original value will remain untouched.</p><p>Types can be extended with a variety of attributes. Some attributes are type-specific and some apply to all types.</p><p>Custom types can be created by defining an object with type properties.</p><pre><code class="lang-js"><span class="token keyword">var</span> NotEmptyString <span class="token operator">=</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> minLength<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+country<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> NotEmptyString<span class="token punctuation">,</span> <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&apos;USA&apos;</span><span class="token punctuation">}</span></code></pre>
+<h4 id="general-attributes">General attributes</h4><p><strong>transform</strong>
+Called immediately when value is set and before any typecast is done.</p><pre><code class="lang-js">name<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> transform<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// Modify the value here...</span>
+  <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>
+<p><strong>validate</strong>
+Called immediately when value is set and before any typecast is done. Can be used for validating input data.
+If you return <code>false</code> the write operation will be cancelled.</p><pre><code class="lang-js">name<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> validate<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// check</span>
+  <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>
+<p><strong>default</strong>
+Provide default value. You may pass value directly or pass a function which will be executed when the object is initialized. The function is executed in the context of the object and can use &quot;this&quot; to access other properties (which .</p><pre><code class="lang-js">country<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&apos;USA&apos;</span><span class="token punctuation">}</span></code></pre>
+<p><strong>get</strong>
+Provide function to transform value when retrieved. Executed in the context of the object and can use &quot;this&quot; to access properties.</p><pre><code class="lang-js">string<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> <span class="token keyword">get</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> value<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>
+<p><strong>readOnly</strong>
+If <code>true</code>, the value can be read but cannot be written to. This can be useful for creating fields that reflect other values.</p><pre><code class="lang-js">fullName<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> readOnly<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">,</span> <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">&apos; &apos;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lastName<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>
+<p><strong>invisible</strong>
+If <code>true</code>, the value can be written to but isn&apos;t outputted as an <a href="glossary.html#index" class="glossary-term" title="A mechanism for looking up documents by means other than primary key / id. Currently Lounge itself only supports
+automatic indexing and lookup using reference lookup documents.
+Other indexing can be accomplished using views
+and N1QL. These can be easily
+added to models and lounge by using existing functionality and extending it.">index</a> when <code>toObject()</code> is called.
+This can be useful for hiding internal variables.</p><p><strong>serializable</strong>
+By default all values defined in the <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a> except those that are set to invisible using the property above are written
+to the database when the document is saved. If this property is set to <code>false</code>, the value can be written to and can be
+read and will be visible using <code>toObject</code> and <code>toJSON</code> methods but is not written when <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> is saved to the database.
+This can be useful when you need some &quot;working&quot; properties that you never want to serialized but otherwise passed around
+and visible.</p><h4 id="string">String</h4><p><strong>stringTransform</strong>
+Called after value is typecast to string <strong>if</strong> value was successfully typecast but called before all validation.</p><pre><code class="lang-js">postalCode<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> stringTransform<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// Type will ALWAYS be String, so using string prototype is OK.</span>
+  <span class="token keyword">return</span> string<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>
+<p><strong>regex</strong>
+Validates string against Regular Expression. If string doesn&apos;t match, it&apos;s rejected.</p><pre><code class="lang-js">memberCode<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> regex<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span><span class="token string">&apos;^([0-9A-Z]{4})$&apos;</span><span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre>
+<p><strong>enum</strong>
+Validates string against array of strings. If not present, it&apos;s rejected.</p><pre><code class="lang-js">gender<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> <span class="token keyword">enum</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;m&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;f&apos;</span><span class="token punctuation">]</span><span class="token punctuation">}</span></code></pre>
+<p><strong>minLength</strong>
+Enforces minimum string length.</p><pre><code class="lang-js">notEmpty<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> minLength<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">}</span></code></pre>
+<p><strong>maxLength</strong>
+Enforces maximum string length.</p><pre><code class="lang-js">stateAbbrev<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> maxLength<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">}</span></code></pre>
+<p><strong>clip</strong>
+If <code>true</code>, clips string to maximum string length instead of rejecting string.</p><pre><code class="lang-js">bio<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> maxLength<span class="token punctuation">:</span> <span class="token number">255</span><span class="token punctuation">,</span> clip<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">}</span></code></pre>
+<h4 id="number">Number</h4><p><strong>min</strong>
+Number must be &gt; min attribute or it&apos;s rejected.</p><pre><code class="lang-js">positive<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> Number<span class="token punctuation">,</span> min<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">}</span></code></pre>
+<p><strong>max</strong>
+Number must be &lt; max attribute or it&apos;s rejected.</p><pre><code class="lang-js">negative<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> Number<span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">}</span></code></pre>
+<h4 id="array">Array</h4><p><strong>unique</strong>
+Ensures duplicate-free array, using === to test object equality.</p><pre><code class="lang-js">emails<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> Array<span class="token punctuation">,</span> unique<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">,</span> arrayType<span class="token punctuation">:</span> String<span class="token punctuation">}</span></code></pre>
+<p><strong>arrayType</strong>
+Elements within the array will be typed to the attributes defined.</p><pre><code class="lang-js">aliases<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> Array<span class="token punctuation">,</span> arrayType<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> minLength<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>
+<p>An alternative shorthand version is also available -- wrap the properties within array brackets.</p><pre><code class="lang-js">aliases<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> minLength<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">]</span></code></pre>
+<h4 id="object">Object</h4><p><strong>objectType</strong>
+Allows you to define a typed object.</p><pre><code class="lang-js">company<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> Object<span class="token punctuation">,</span> objectType<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>
+<p>An alternative shorthand version is also available -- simply pass a descriptor.</p><pre><code class="lang-js">company<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span></code></pre>
+<h4 id="alias">Alias</h4><p><strong>target (required)</strong></p><p>The target key of the property being aliased.</p><pre><code class="lang-js">zip<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+postalCode<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> <span class="token string">&apos;alias&apos;</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token string">&apos;zip&apos;</span><span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// this.postalCode = 12345 -&gt; this.toObject() -&gt; {zip: &apos;12345&apos;}</span></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="modeling.html" class="navigation navigation-prev " aria-label="Previous page: Modeling">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="middleware.html" class="navigation navigation-next " aria-label="Next page: Middleware">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Types","level":"1.3","depth":1,"next":{"title":"Middleware","level":"1.4","depth":1,"path":"middleware.md","ref":"middleware.md","articles":[]},"previous":{"title":"Modeling","level":"1.2","depth":1,"path":"modeling.md","ref":"modeling.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/bojand/lounge"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"glossary.md","summary":"summary.md"},"variables":{},"title":"Lounge","gitbook":">=3.0.0"},"file":{"path":"types.md","mtime":"2016-08-13T15:49:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-18T02:19:31.281Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

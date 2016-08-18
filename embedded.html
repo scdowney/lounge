@@ -1,0 +1,460 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Embedded Documents  · Lounge</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="docops.html" />
+    
+    
+    <link rel="prev" href="extend.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="modeling.html">
+            
+                <a href="modeling.html">
+            
+                    
+                    Modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="middleware.html">
+            
+                <a href="middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="extend.html">
+            
+                <a href="extend.html">
+            
+                    
+                    Schema Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="embedded.html">
+            
+                <a href="embedded.html">
+            
+                    
+                    Embedded Documents 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="docops.html">
+            
+                <a href="docops.html">
+            
+                    
+                    Document Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="population.html">
+            
+                <a href="population.html">
+            
+                    
+                    Population
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="indexes.html">
+            
+                <a href="indexes.html">
+            
+                    
+                    Indexes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="promises.html">
+            
+                <a href="promises.html">
+            
+                    
+                    Promises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="api.html">
+            
+                <a href="api.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Embedded Documents </a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="embedded-documents-">Embedded Documents <a id="embedded"></a></h2><p>Lounge allows for embedding and referencing other Models within <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a>.</p><pre><code class="lang-js"><span class="token keyword">var</span> addressSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  street<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  city<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  country<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> Address <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;Address&apos;</span><span class="token punctuation">,</span> addressSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> blogPostSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  body<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> BlogPost <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;BlogPost&apos;</span><span class="token punctuation">,</span> blogPostSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  address<span class="token punctuation">:</span> Address<span class="token punctuation">,</span>
+  posts<span class="token punctuation">:</span> <span class="token punctuation">[</span>BlogPost<span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> post <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BlogPost</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token string">&apos;Foo&apos;</span><span class="token punctuation">,</span>
+  body<span class="token punctuation">:</span> <span class="token string">&apos;Lorem ipsum&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">&apos;Bob Smith&apos;</span><span class="token punctuation">,</span>
+  posts<span class="token punctuation">:</span> <span class="token punctuation">[</span>post<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  address<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Address</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    street<span class="token punctuation">:</span> <span class="token string">&apos;123 Fake Street&apos;</span><span class="token punctuation">,</span>
+    city<span class="token punctuation">:</span> <span class="token string">&apos;Springfield&apos;</span><span class="token punctuation">,</span>
+    country<span class="token punctuation">:</span> <span class="token string">&apos;USA&apos;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user<span class="token punctuation">.</span>posts<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BlogPost</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token string">&apos;Post 2&apos;</span><span class="token punctuation">,</span>
+  body<span class="token punctuation">:</span> <span class="token string">&apos;Some more text!&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>You can manipulate and work with subdocument just like any <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> instances. When the top level document is saved
+all child subdocuments are saved as well. Subdocuments <strong>must</strong> be an instance of the <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">Model</a> defined in the <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a> or a
+<code>String</code> in which case it represents the key / id of the subdocument.</p><p>If needed we can also specify <a href="glossary.html#embedded-document" class="glossary-term" title="Model schemas can reference other models within them. In such scenario&apos;s only a reference to one document is
+saved within the other. Then actual contents are two different documents, linked only by a reference using the document
+key.">embedded document</a> type of a <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> that is not defined yet. For example:</p><pre><code class="lang-js"><span class="token keyword">var</span> siteSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  owner<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> lounge<span class="token punctuation">.</span>Model<span class="token punctuation">,</span> modelName<span class="token punctuation">:</span> <span class="token string">&apos;User&apos;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  url<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> Site <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;Site&apos;</span><span class="token punctuation">,</span> siteSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  email<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  name<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> User <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;User&apos;</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">&apos;Joe Smith&apos;</span><span class="token punctuation">,</span>
+  email<span class="token punctuation">:</span> <span class="token string">&apos;jsmith@gmail.com&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> site <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Site</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token punctuation">:</span> <span class="token string">&apos;http://wwww.mysite.org&apos;</span><span class="token punctuation">,</span>
+  owner<span class="token punctuation">:</span> user
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="extend.html" class="navigation navigation-prev " aria-label="Previous page: Schema Extension">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="docops.html" class="navigation navigation-next " aria-label="Next page: Document Operations">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Embedded Documents ","level":"1.6","depth":1,"next":{"title":"Document Operations","level":"1.7","depth":1,"path":"docops.md","ref":"docops.md","articles":[]},"previous":{"title":"Schema Extension","level":"1.5","depth":1,"path":"extend.md","ref":"extend.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/bojand/lounge"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"glossary.md","summary":"summary.md"},"variables":{},"title":"Lounge","gitbook":">=3.0.0"},"file":{"path":"embedded.md","mtime":"2016-08-13T15:49:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-18T02:19:31.281Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

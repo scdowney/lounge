@@ -1,0 +1,634 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Modeling · Lounge</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="types.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="modeling.html">
+            
+                <a href="modeling.html">
+            
+                    
+                    Modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="middleware.html">
+            
+                <a href="middleware.html">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="extend.html">
+            
+                <a href="extend.html">
+            
+                    
+                    Schema Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="embedded.html">
+            
+                <a href="embedded.html">
+            
+                    
+                    Embedded Documents 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="docops.html">
+            
+                <a href="docops.html">
+            
+                    
+                    Document Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="population.html">
+            
+                <a href="population.html">
+            
+                    
+                    Population
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="indexes.html">
+            
+                <a href="indexes.html">
+            
+                    
+                    Indexes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="promises.html">
+            
+                <a href="promises.html">
+            
+                    
+                    Promises
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="api.html">
+            
+                <a href="api.html">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Modeling</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="modeling-">Modeling <a id="model"></a></h2><p><strong>Basics</strong></p><p>We begin defining a data <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> using a <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a>.</p><pre><code class="lang-js"><span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  firstName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  lastName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  age<span class="token punctuation">:</span> Number<span class="token punctuation">,</span>
+  usernames<span class="token punctuation">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  setup<span class="token punctuation">:</span> Boolean
+  metadata<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    createdAt<span class="token punctuation">:</span> Date<span class="token punctuation">,</span>
+    updatedAt<span class="token punctuation">:</span> Date
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>We can add additional properties using <code>add</code> function:</p><pre><code class="lang-js">userSchema<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">,</span> String<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Alternatively we can explicitly specify the type using <code>type</code> property:</p><pre><code class="lang-js"><span class="token keyword">var</span> catSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token punctuation">{</span> type<span class="token punctuation">:</span> String <span class="token punctuation">}</span>
+  breed<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+catSchema<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&apos;age&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">Schema</a> options can be set at construction or using the <code>set</code> function.</p><pre><code class="lang-js"><span class="token keyword">var</span> catSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token punctuation">{</span> type<span class="token punctuation">:</span> String <span class="token punctuation">}</span>
+  breed<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+catSchema<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">&apos;minimize&apos;</span><span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><strong>Document keys</strong></p><p>By default schemas come with an <code>id</code> property as the <a href="glossary.html#document-key" class="glossary-term" title="A document must have a primary key. It is used to look up the document within the database. If a key property
+isn&apos;t specified within a model schema, Lounge automatically creates one named id.">document key</a>, and the automatically generated value will be
+a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier" target="_blank">UUID</a>
+using <a href="https://www.npmjs.com/package/node-uuid" target="_blank">node-uuid</a> <code>v4()</code> function. This should be most practical and
+appropriate in a lot of cases. Alternatively you can specify explicit key properties:</p><pre><code class="lang-js"><span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  firstName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  lastName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  email<span class="token punctuation">:</span> <span class="token punctuation">{</span> type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> key<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">,</span> generate<span class="token punctuation">:</span> <span class="token keyword">false</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Here we desire <code>email</code> to be used as the <a href="glossary.html#document-key" class="glossary-term" title="A document must have a primary key. It is used to look up the document within the database. If a key property
+isn&apos;t specified within a model schema, Lounge automatically creates one named id.">document key</a> and we specify <code>generate: false</code> because we do not want Lounge
+to automatically handle key property value generation. If we still want uuid generation but in a different property
+we can specify so:</p><pre><code class="lang-js"><span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  firstName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  lastName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  email<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  userId<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> key<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">,</span> generate<span class="token punctuation">:</span> <span class="token keyword">true</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><code>generate</code> does not have to be set explicitly to <code>true</code> as that is the default.</p><p>We can specify additional prefix and/or suffix for keys. This will be used when wrigin to the database as the actual
+<a href="glossary.html#document-key" class="glossary-term" title="A document must have a primary key. It is used to look up the document within the database. If a key property
+isn&apos;t specified within a model schema, Lounge automatically creates one named id.">document key</a>.</p><pre><code class="lang-js"><span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  firstName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  lastName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  email<span class="token punctuation">:</span> <span class="token punctuation">{</span> type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> key<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">,</span> generate<span class="token punctuation">:</span> <span class="token keyword">false</span><span class="token punctuation">,</span> prefix<span class="token punctuation">:</span> <span class="token string">&apos;user&apos;</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Note that setting prefix and suffix options like this will take presidence over any <code>keyPrefix</code> and <code>keySuffix</code>
+options specified in the second options parameter to the <code>schema()</code> call or any settings in the lounge config.</p><p><strong>Examples</strong></p><pre><code class="lang-js"><span class="token keyword">var</span> lounge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;lounge&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// ... connect</span>
+
+<span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> String
+  email<span class="token punctuation">:</span> <span class="token punctuation">{</span> type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> key<span class="token punctuation">:</span> <span class="token keyword">true</span><span class="token punctuation">,</span> generate<span class="token punctuation">:</span> <span class="token keyword">false</span><span class="token punctuation">,</span> prefix<span class="token punctuation">:</span> <span class="token string">&apos;user::&apos;</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> User <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;User&apos;</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">&apos;Bob Smith&apos;</span><span class="token punctuation">,</span> email<span class="token punctuation">:</span> <span class="token string">&apos;bsmith@acme.com&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+user<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>This will save the user document under key <code>user::bsmith@acme.com</code>.</p><pre><code class="lang-js"><span class="token keyword">var</span> lounge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;lounge&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// ... connect</span>
+
+<span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  keyPrefix<span class="token punctuation">:</span> <span class="token string">&apos;user::&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> User <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;User&apos;</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">&apos;Bob Smith&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+user<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>This will automatically generate a uuid <code>id</code> property and save the user document under key
+similar to <code>user::110ec58a-a0f2-4ac4-8393-c866d813b8d1</code>.</p><p><strong>Data manipulation</strong></p><p>Data in <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">Model</a> instances can be access directly or using <code>get</code> function. Similarly it can be manipulated using
+either assignment operator or using the <code>set</code> function. In either case the input value is validated to be of proper type.</p><pre><code class="lang-js"><span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> String
+  friends<span class="token punctuation">:</span> Number<span class="token punctuation">,</span>
+  dob<span class="token punctuation">:</span> Date<span class="token punctuation">,</span>
+  setup<span class="token punctuation">:</span> Boolean
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> User <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;User&apos;</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">&apos;Bob Smith&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// &apos;Bob Smith&apos;</span>
+user<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&apos;Joe&apos;</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// OK</span>
+user<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">&apos;Joe&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// OK</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// &apos;Joe&apos;</span>
+user<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">&apos;friends&apos;</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// OK</span>
+user<span class="token punctuation">.</span>friends <span class="token operator">=</span> <span class="token string">&apos;abc&apos;</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// nope. still 20</span>
+user<span class="token punctuation">.</span>dob <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token string">&apos;July 5, 1980&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+user<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">&apos;dob&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// instance of Date</span>
+user<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">&apos;setup&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;yup&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// nope</span>
+user<span class="token punctuation">.</span>setup <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// OK</span></code></pre>
+<p><strong>Validation</strong></p><p>Lounge does automatic validation against input data using the type information specified in the <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a> definition.
+We can provide custom validation in <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a> definition by providing <code>validator</code> function.</p><pre><code class="lang-js"><span class="token keyword">var</span> validator <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;validator&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Node validator module</span>
+
+<span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> String
+  email<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> validate<span class="token punctuation">:</span> validator<span class="token punctuation">.</span>isEmail<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> User <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;User&apos;</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">&apos;Bob Smith&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user<span class="token punctuation">.</span>email <span class="token operator">=</span> <span class="token string">&apos;bob@gmail.com&apos;</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// OK</span>
+user<span class="token punctuation">.</span>email <span class="token operator">=</span> <span class="token string">&apos;bsmith&apos;</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Nope</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>email<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// &apos;bob@gmail.com&apos;</span></code></pre>
+<p><strong>Virtuals</strong></p><p>Virtuals are document properties that you can get and set but that do not get persisted to the database.
+The getters are useful for formatting or combining fields, while setters are useful for de-composing a single value
+into multiple values for storage.</p><pre><code class="lang-js"><span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  firstName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  lastName<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+userSchema<span class="token punctuation">.</span><span class="token function">virtual</span><span class="token punctuation">(</span><span class="token string">&apos;fullName&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token keyword">get</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">&apos; &apos;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lastName<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">set</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>v <span class="token operator">!</span><span class="token operator">==</span> undefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> parts <span class="token operator">=</span> v<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&apos; &apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">=</span> parts<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>lastName <span class="token operator">=</span> parts<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> User <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;User&apos;</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span>firstName<span class="token punctuation">:</span> <span class="token string">&apos;Bob&apos;</span><span class="token punctuation">,</span> lastName<span class="token punctuation">:</span> <span class="token string">&apos;Smith&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>fullName<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Bob Smith</span>
+user<span class="token punctuation">.</span>fullName <span class="token operator">=</span> <span class="token string">&apos;Jim Jones&apos;</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>fullName<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Jim Jones</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>firstName<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Jim</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>lastName<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Jones</span></code></pre>
+<p>If no <code>set</code> function is defined the virtual is read-only.</p><p><strong>Statics</strong></p><p>Adding static methods to Models can be accomplished using <code>static()</code> <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a> function</p><pre><code class="lang-js"><span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  firstName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  lastName<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+userSchema<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> q<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> p <span class="token operator">+</span> q<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> User <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;User&apos;</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+User<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 3</span></code></pre>
+<p>We can also pass an object of function keys and function values, and they will all be added.</p><p><strong>Methods</strong></p><p>Similarly adding instance methods to Models can be done using <code>method()</code> <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a> function.</p><pre><code class="lang-js"><span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  firstName<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  lastName<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+userSchema<span class="token punctuation">.</span><span class="token function">method</span><span class="token punctuation">(</span><span class="token string">&apos;fullName&apos;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>firstName <span class="token operator">+</span> <span class="token string">&apos; &apos;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lastName<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> User <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;User&apos;</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span>firstName<span class="token punctuation">:</span> <span class="token string">&apos;Bob&apos;</span><span class="token punctuation">,</span> lastName<span class="token punctuation">:</span> <span class="token string">&apos;Smith&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+user<span class="token punctuation">.</span><span class="token function">fullName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// &apos;Bob Smith&apos;</span></code></pre>
+<p>We can also pass an object of function keys and function values, and they will all be added.</p><p><strong>init() method</strong></p><p>There is a special <code>init</code> method that if specified in <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a> definition will be called at the end of <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> creation.
+You can do additional setup here. This method is not passed in any arguments.</p><p><strong>toObject()</strong></p><p><a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">Model</a> instances come with <code>toObject</code> function that is automatically used for <code>console.log</code> inspection.</p><p>Options:</p><ul><li><code>transform</code> - function used to transform an object once it&apos;s been converted to plain javascript representation from a
+<a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> instance.
+</li>
+<li><code>minimize</code> - to &quot;minimize&quot; the document by removing any empty properties. Default: <code>true</code>
+</li>
+<li><code>virtuals</code> - to apply virtual getters
+</li>
+<li><code>serializable</code> - whether to include <code>serializable</code> properties. Default: <code>true</code>
+</li>
+<li><code>dateToISO</code> - convert dates to string in ISO format using <code>Date.toISOString()</code>. Default: <code>true</code>
+</li></ul>
+<p>These settings can be applied on any invocation of <code>toObject</code> as well they can be set at <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a> level.</p><pre><code class="lang-js"><span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  email<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  password<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> xform <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>doc<span class="token punctuation">,</span> ret<span class="token punctuation">,</span> options<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">delete</span> ret<span class="token punctuation">.</span>password<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> ret<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+userSchema<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">&apos;toObject&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>transform<span class="token punctuation">:</span> xform<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> User <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;User&apos;</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">&apos;Joe&apos;</span><span class="token punctuation">,</span>
+  email<span class="token punctuation">:</span> <span class="token string">&apos;joe@gmail.com&apos;</span><span class="token punctuation">,</span>
+  password<span class="token punctuation">:</span> <span class="token string">&apos;password&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// { name: &apos;Joe&apos;, email: &apos;joe@gmail.com&apos; }</span></code></pre>
+<p><strong>toJSON()</strong></p><p>Similar to <code>toObject</code>. The return value of this method is used in calls to <code>JSON.stringify</code>.</p><p><strong>CAS</strong></p><p>All document instances have a read-only property <code>cas</code> that returns the string representation of the CAS object retrieved
+from the database. The <code>cas</code> property is initialized only once a document has been retrieved from the database using one
+of query functions, or once it has been saved. Alternatively we can use the method <code>getCAS(raw)</code> to get the cas value.
+If <code>raw</code> is <code>true</code> then we return the raw CAS object. Otherwise we return string representation. This can be useful
+for computation of ETag values for example.</p><pre><code class="lang-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>doc<span class="token punctuation">.</span>cas<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// String: 00000000a71626e4</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>doc<span class="token punctuation">.</span><span class="token function">getCAS</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// String: 00000000a71626e4</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>doc<span class="token punctuation">.</span><span class="token function">getCAS</span><span class="token punctuation">(</span><span class="token keyword">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Object: CouchbaseCas&lt;11338961768815788032&gt;</span></code></pre>
+<p><strong>Useful member variables</strong></p><p>All <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> instances come with a <code>modelName</code> read only property that you can use to access the <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> name. As well
+instances have <code>schema</code> property that represents the models <a href="glossary.html#schema" class="glossary-term" title="A schema defines all the properties, methods and behavior of a model. Schemas can extend other schemas and inherit
+properties, methods and middleware.">schema</a> used when creating the <a href="glossary.html#model" class="glossary-term" title="Models are generated from schemas and represent implementation for interacting with the database.">model</a> with <code>model()</code> function.</p><pre><code class="lang-js"><span class="token keyword">var</span> userSchema <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+  email<span class="token punctuation">:</span> String
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> User <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;User&apos;</span><span class="token punctuation">,</span> userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">&apos;Bob Smith&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>modelName<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// &apos;User&apos;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>schema <span class="token keyword">instanceof</span> <span class="token class-name">lounge<span class="token punctuation">.</span>Schema</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span></code></pre>
+<p><strong>Errors</strong></p><p>When setting a value fails, an error is generated silently. Errors can be retrieved with <code>getErrors()</code> and cleared with <code>clearErrors()</code>.</p><pre><code class="lang-js"><span class="token keyword">var</span> schema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">lounge<span class="token punctuation">.</span>schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  id<span class="token punctuation">:</span> <span class="token punctuation">{</span>type<span class="token punctuation">:</span> String<span class="token punctuation">,</span> minLength<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> Profile <span class="token operator">=</span> lounge<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">&apos;Profile&apos;</span><span class="token punctuation">,</span> schema<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> profile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Profile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+profile<span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token string">&apos;1234&apos;</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>profile<span class="token punctuation">.</span><span class="token function">hasErrors</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>profile<span class="token punctuation">.</span><span class="token function">getErrors</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Prints:</span>
+<span class="token punctuation">[</span> <span class="token punctuation">{</span> errorMessage<span class="token punctuation">:</span> <span class="token string">&apos;String length too short to meet minLength requirement.&apos;</span><span class="token punctuation">,</span>
+    setValue<span class="token punctuation">:</span> <span class="token string">&apos;1234&apos;</span><span class="token punctuation">,</span>
+    originalValue<span class="token punctuation">:</span> undefined<span class="token punctuation">,</span>
+    fieldSchema<span class="token punctuation">:</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">&apos;id&apos;</span><span class="token punctuation">,</span> type<span class="token punctuation">:</span> <span class="token string">&apos;string&apos;</span><span class="token punctuation">,</span> minLength<span class="token punctuation">:</span> <span class="token number">5</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">// Clear all errors.</span>
+profile<span class="token punctuation">.</span><span class="token function">clearErrors</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="types.html" class="navigation navigation-next " aria-label="Next page: Types">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Modeling","level":"1.2","depth":1,"next":{"title":"Types","level":"1.3","depth":1,"path":"types.md","ref":"types.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"readme.md","ref":"readme.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/bojand/lounge"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"glossary.md","summary":"summary.md"},"variables":{},"title":"Lounge","gitbook":">=3.0.0"},"file":{"path":"modeling.md","mtime":"2016-08-13T15:49:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-18T02:19:31.281Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
