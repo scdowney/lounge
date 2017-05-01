@@ -5,6 +5,7 @@ var async = require('async')
 var testUtil = require('./helpers/utils')
 var expect = require('chai').expect
 var lounge = require('../')
+var uuid = require('uuid')
 
 var bucket
 
@@ -27,6 +28,52 @@ describe('Model index query tests', function () {
           bucket: bucket
         }, function () {
           bucket.manager().flush(done)
+        })
+      })
+    })
+
+    it('should query with larger input array', function (done) {
+      var userSchema = lounge.schema({
+        firstName: String,
+        lastName: String,
+        email: { type: String, index: true }
+      })
+
+      var User = lounge.model('User', userSchema)
+
+      var userData = {
+        firstName: 'Joe',
+        lastName: 'Smith',
+        email: 'joe@gmail.com'
+      }
+
+      var user = new User(userData)
+
+      user.save(function (err, savedDoc) {
+        expect(err).to.not.be.ok
+        expect(savedDoc).to.be.ok
+
+        const tmp = []
+        _.times(20, (i) => tmp.push(`joe+${i}@email.com`))
+
+        console.dir(tmp);
+
+        User.findByEmail(tmp, function (err, rdoc) {
+          console.dir(err);
+          expect(err).to.not.be.ok
+
+          expect(rdoc).to.be.ok
+          expect(rdoc).to.be.an('object')
+          expect(rdoc).to.be.an.instanceof(User)
+          expect(rdoc.id).to.be.ok
+          expect(rdoc.id).to.be.a('string')
+
+          expect(rdoc.id).to.equal(user.id)
+          expect(rdoc.firstName).to.equal(userData.firstName)
+          expect(rdoc.lastName).to.equal(userData.lastName)
+          expect(rdoc.email).to.equal(userData.email)
+
+          done()
         })
       })
     })
