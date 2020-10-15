@@ -31,6 +31,7 @@
     "async": "^3.0.1",
     "clone": "^2.1.2",
     "couchbase-driver": "^0.5.1",
+    "cvent-logger": "^0.1.9-pre.0",
     "debug": "^4.0.0",
     "escape-string-regexp": "^2.0.0",
     "grappling-hook-lounge": "~1.0.0",
